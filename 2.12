@@ -1,3 +1,5 @@
+
+  
 <html>
 
 <head>
@@ -90,8 +92,9 @@ document.getElementById("inf1").innerHTML ="";
 function er1() {
       var abc = Number(document.getElementById("var_in").value);
 document.getElementById("inf1").innerHTML ="";
-      document.getElementById("inf1").innerHTML = "Сотни " + (abc-(abc%100))/100 + "<br>десятки " + (((abc-(abc%10))-(abc-(abc%100)))/10)  +"<br>единиц " + abc % 10 + "<br>их сумма=" +  ((((abc-(abc%100))/100)+(((abc-(abc%10))-(abc-(abc%100)))/10))+(abc % 10)) + "<br>их произведение=" + ((((abc-(abc%100))/100)*(((abc-(abc%10))-(abc-(abc%100)))/10))*(abc % 10));
-    }
+      document.getElementById("inf1").innerHTML = "Сотни " + (abc-(abc%100))/100 + "<br>десятки " + (((abc-(abc%10))-(abc-(abc%100)))/10)  +"<br>единиц " + abc % 10 + "<br>их сумма=" +  ((((abc-(abc%100))/100)+(((abc-(abc%10))-(abc-(abc%100)))/10))+(abc % 10)) + "<br>их произведение=" + ((((abc-(abc%100))/100)*(((abc-(abc%10))-(abc-(abc%100)))/10))*(abc % 10)) +"<br>в обратном порядке=" + ((100*(abc % 10))+(10*(((abc-(abc%10))-(abc-(abc%100)))/10))+(abc-(abc%100))/100)   ;
+   
+   }
     
     function er3() {
       var ab = document.getElementById("var_in").value;
@@ -102,9 +105,7 @@ document.getElementById("inf1").textContent = "";
 </head>
 
 <body>
-  <a class="button8" onclick="er()">2.10</a>
-  <a class="button8" onclick="er1()">2.12</a>
-  <a class="button8" onclick="er3()">Любая</a>
+  <a class="button8" onclick="er1()">2.13</a>
   <div class="layer1">
     <input type="text" value="57" id="var_in">
     <br>
@@ -116,6 +117,9 @@ document.getElementById("inf1").textContent = "";
 </body>
 
 </html>
+
+
+
 
 
 
